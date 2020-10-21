@@ -8,16 +8,11 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
-    FragmentManager mFragmentManager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        mFragmentManager = getSupportFragmentManager();
 
-        FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-        BlankFragment blankFragment = new BlankFragment();
-        fragmentTransaction.add(R.id.linearLayout,blankFragment);
-        fragmentTransaction.commit();
+
     }
 }
