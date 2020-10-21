@@ -31,4 +31,24 @@ public class MainActivity extends AppCompatActivity {
         fragmentTransaction.add(R.id.liearlayoutContainer,iosFragment);
         fragmentTransaction.commit();
     }
+
+    public void replaceAndroid(View view) {
+        FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+        AndroidFragment androidFragment = new AndroidFragment();
+        fragmentTransaction.replace(R.id.liearlayoutContainer,androidFragment);
+        fragmentTransaction.commit();
+    }
+
+    public void replaceIos(View view) {
+        FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+        IosFragment iosFragment = new IosFragment();
+        fragmentTransaction.replace(R.id.liearlayoutContainer,iosFragment);
+        fragmentTransaction.commit();
+    }
+
+    public void removeAndroid(View view) {
+    }
+
+    public void removeIos(View view) {
+    }
 }
